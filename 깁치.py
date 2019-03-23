@@ -38,7 +38,7 @@ async def on_message(message):
     if message.content.startswith("시발련아"):
         await client.send_message(message.channel, "왜그러세요 ㅠㅠ")
     if message.content.startswith("깁치야 도움"):
-        await client.send_message(message.channel, "깁치야 (안녕,뭐해,넌 누구야,오랜만,아야나는?,미육이는?,그루비는?,닭작가는?,너는,닥쳐,시발련아")
+        await client.send_message(message.channel, "깁치야 (안녕,뭐해,넌 누구야,오랜만,아야나는?,미육이는?,그루비는?,닭작가는?,너는,닥쳐,시발련아,게임")
     if message.content.startswith("깁치야 주사위"):
         roll = message.content.split(" ")
         rolld = roll[1].split("d")
@@ -46,6 +46,8 @@ async def on_message(message):
         for i in range(1, int(rolld[0])+1):
             dice = dice + random.randint(1, int(rolld[1]))
         await client.send_message(message.channel, str(dice))
+    if message.content.startswith("깁치야 게임"):
+        await client.send_message(message.channel, "개발중이야")
 
 
 
