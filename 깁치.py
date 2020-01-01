@@ -105,4 +105,4 @@ async def on_message(message):
             await message.channel.send("``인증 완료! -사전예약 보상- 사전예약 상자가 지급되었습니다.``")
         else:
             await message.channel.send("``인증에 실패하였습니다. (사유:코드 불일치)``")
-client.run('NTU2NjYwMjc0MzgwNDA2ODA1.Xggq6w.c3Llr_uSVrIgPFvCJ2X5XY74CFc')
+client.run('NTU2NjYwMjc0MzgwNDA2ODA1.Xgw6VQ.ZoBWDFynE0SphywJ8BWkQy1VTaM')
